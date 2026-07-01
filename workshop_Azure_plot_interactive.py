@@ -15,15 +15,18 @@ from langchain_community.vectorstores import Chroma
 from langchain_community.document_loaders import PyPDFLoader
 from langchain_core.prompts import ChatPromptTemplate, PromptTemplate
 from langchain_core.output_parsers import StrOutputParser, JsonOutputParser
-from langchain_core.pydantic_v1 import BaseModel, Field
+from pydantic import BaseModel, Field
 from langchain_core.runnables import RunnableParallel, RunnablePassthrough
-from langchain.text_splitter import RecursiveCharacterTextSplitter
+#from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_text_splitters import RecursiveCharacterTextSplitter
 from langchain_core.documents import Document
 
 # --- Agent Imports ---
-from langchain.agents import AgentExecutor, create_react_agent
+#from langchain.agents import AgentExecutor, create_react_agent
 from langchain_core.tools import tool, render_text_description
-from langchain import hub
+#from langchain import hub
+#import langchain_hub as hub
+
 
 # --- Visualization Imports ---
 from sklearn.decomposition import PCA

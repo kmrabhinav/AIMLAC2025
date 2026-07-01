@@ -26,7 +26,7 @@ from langchain import hub
 # --- Visualization Imports ---
 import matplotlib.pyplot as plt
 from matplotlib.patches import Circle
-from sklearn.decomposition import PCA
+from sklearn.decompositclearion import PCA
 
 # --- AZURE OPENAI Imports ---
 from langchain_openai import AzureChatOpenAI, AzureOpenAIEmbeddings
